@@ -1,24 +1,50 @@
-.btn-group .button {
-      background-color: #807c84;
-      border: 0px;
-      color: white;
-      padding: 15px 32px;
-      text-align: center;
-      text-decoration: none;
-      font-size: 16px;
-      border-radius: 16px;
-  }
+.btn-group{
+  padding: 0px;
+  box-sizing: border-box;
+  margin: 0px 5px;
+}
 
-.btn-group .button:hover {
+.btn-group2{
+  padding: 0px;
+  box-sizing: border-box;
+  margin: 20px 5px;
+}
+
+.button {
+  background-color: #807c84;
+  border: 0px;
+  color: white;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 2px;
+}
+
+.button2 {
+  margin:10px 5px;
+  background-color: #807c84;
+  border: 0px;
+  color: white;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+.button:hover .button2:hover{
     background-color: #949299;
 }
 
 .titre {
   color:#521b65;
+  margin: 20px 5px;
   font-size: 50px;
-  padding: 40px;
+  padding: 40px 60px;
   text-align: center;
   background:#7CB890;
+  box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -26,6 +52,7 @@ p {
   font-family: Arial, Helvetica, sans-serif;
   color: white;
   font-size: 20px;
+  margin: 0px 5px;
 }
 
 a {
@@ -34,6 +61,11 @@ a {
   font-size: 20px;
 }
 
+hr{
+  margin: 1px 5px;
+  border: 3px dotted #7CB890;
+}
+
 body {
-background-color: #008080;
+  background-color: #008080;
 }
