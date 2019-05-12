@@ -1,2 +1,2 @@
 # ServeurNova
-Site web officiel du serveur Nova
+Prototype du site web officiel du serveur minecraft Nova.
