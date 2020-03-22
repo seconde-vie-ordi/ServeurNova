@@ -1,14 +1,15 @@
 nav {
   padding: 10px 40px;
+  margin: 0px 5px;
   background: #27496d;
   overflow: hidden;
   position: sticky;
   top: 0px;
-  border-radius: 20px 20px 0px 0px;
 }
 
 section {
   padding: 20px 5px;
+  margin: 0px 5px;
   background: #0c7b93;
 }
 
@@ -37,17 +38,29 @@ a {
 
 body {
   background: #142850;
+  animation: chargement 600ms 1 ease-out;
+}
+
+@keyframes chargement {
+ from {
+   transform: translate(0px, -50%) scale(0.95);
+ }
+ to {}
 }
 
 .menu {
-  padding: 15px;
+  padding: 10px 15px;
   margin: 0px;
   background-color: #00a8cc;
   border: 0px;
   color: white;
   text-align: center;
   line-height: 0px;
-  border-radius: 0px 0px 5px 5px;
+  transition: background-color 350ms ease;
+}
+
+.menu:hover{
+  background-color: #3f3d41;
 }
 
 .btn {
@@ -56,16 +69,11 @@ body {
   border: 0px;
   color: white;
   text-align: center;
-  border-radius: 100px;
+  transition: background-color 350ms ease;
 }
 
-.button:hover{
+.btn:hover{
   background-color: #3f3d41;
-}
-
-.button2:hover{
-  background-color: #3f3d41;
-  border-radius: 10px;
 }
 
 .float{
