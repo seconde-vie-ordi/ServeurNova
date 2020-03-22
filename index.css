@@ -1,7 +1,6 @@
 nav {
-  margin: 20px 5px;
-  padding: 15px;
-  background: #30357d;
+  padding: 10px 40px;
+  background: #27496d;
   overflow: hidden;
   position: sticky;
   top: 0px;
@@ -9,30 +8,54 @@ nav {
 }
 
 section {
-  margin: 20px 5px;
+  padding: 20px 5px;
+  background: #0c7b93;
 }
 
-.button {
+h1 {
+  font-size: 60px;
+  color: white;
+  font-family: Palatino, URW Palladio L, serif;
+  float: left;
+  line-height: 0px;
+  vertical-align: middle;
+}
+
+p {
+  font-family: Palatino, URW Palladio L, serif;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+a {
+  font-family: Palatino, URW Palladio L, serif;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+body {
+  background: #142850;
+}
+
+.menu {
   padding: 15px;
   margin: 0px;
-  background-color: #8b8b8b;
+  background-color: #00a8cc;
   border: 0px;
   color: white;
   text-align: center;
-  text-decoration: none;
-  font-size: 25px;
   line-height: 0px;
-  border-radius: 0px 0px 10px 10px;
+  border-radius: 0px 0px 5px 5px;
 }
 
-.button2 {
+.btn {
   padding: 10px 20px;
   background-color: #807c84;
   border: 0px;
   color: white;
   text-align: center;
-  text-decoration: none;
-  font-size: 25px;
   border-radius: 100px;
 }
 
@@ -49,33 +72,8 @@ section {
   float: right;
 }
 
-.screen{
+.img{
   width: 24.7%;
   height: auto;
   border-radius: 10px;
-}
-
-h1 {
-  font-size: 60px;
-  color: white;
-  font-family: Palatino, URW Palladio L, serif;
-  float: left;
-  line-height: 0px;
-  vertical-align: middle;
-}
-
-p {
-  font-family: Palatino, URW Palladio L, serif;
-  color: white;
-  font-size: 20px;
-}
-
-a {
-  font-family: Palatino, URW Palladio L, serif;
-  color: white;
-  font-size: 20px;
-}
-
-body {
-  background: #241134;
 }
