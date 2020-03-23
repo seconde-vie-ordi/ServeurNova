@@ -1,31 +1,33 @@
 body {
   background: #222831;
-  animation: chargement 750ms 1 linear;
+  animation: chargement 1s 1 linear;
 }
 
 nav {
-  padding: 10px 20px;
+  padding: 10px 15px;
   margin: 15px 10px 0px 10px;
   background: #393e46;
   overflow: hidden;
+  display: flex;
+  align-items: flex-end;
   position: sticky;
   top: 0px;
+  border-bottom: 5px solid #00adb5;
 }
 
 section {
   padding: 20px 20px;
   margin: 0px 10px;
   background: #2f333b;
-  border: 0 0 0 5px solid #00adb5;
 }
 
 h1 {
+  padding: 0 20px;
   font-size: 60px;
   color: white;
   font-family: Palatino, URW Palladio L, serif;
-  float: left;
   line-height: 0px;
-  vertical-align: middle;
+  width: 42%
 }
 
 p {
@@ -47,11 +49,11 @@ a {
 .menu {
   padding: 10px 15px;
   margin: 0px;
-  background-color: #00adb5;
+  background-color: #007d81;
   border: 0px;
   text-align: center;
   line-height: 0px;
-  transition: 500ms ease;
+  transition: 250ms ease;
 }
 
 .menu:hover{
@@ -66,7 +68,7 @@ a {
   background-color: #00adb5;
   border: 0px;
   text-align: center;
-  transition: 500ms ease;
+  transition: 250ms ease;
 }
 
 .btn:hover{
@@ -87,8 +89,8 @@ a {
 }
 
 @keyframes chargement {
- 0% {transform: translate(0px, -2000px) scale(0.5);}
- 50% {transform: rotateX(180deg) scale(0.75);}
+ 0% {transform: translate(0px, -1000px);}
+ 75% {transform: translate(0px, 25px);}
  100% {}
 }
 
