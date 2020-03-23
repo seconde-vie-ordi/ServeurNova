@@ -1,11 +1,12 @@
 body {
   background: #222831;
-  animation: chargement 1s 1 linear;
+  animation: chargement 700ms 1 linear;
+  -moz-user-select:none;
 }
 
 nav {
   padding: 10px 15px;
-  margin: 15px 10px 0px 10px;
+  margin: 5px 15px 0px 15px;
   background: #393e46;
   overflow: hidden;
   display: flex;
@@ -17,7 +18,7 @@ nav {
 
 section {
   padding: 20px 20px;
-  margin: 0px 10px;
+  margin: 0px 15px;
   background: #2f333b;
 }
 
@@ -44,6 +45,7 @@ a {
   font-size: 20px;
   text-decoration: none;
   font-family: consolas;
+  outline: 0;
 }
 
 .menu {
@@ -53,14 +55,13 @@ a {
   border: 0px;
   text-align: center;
   line-height: 0px;
-  transition: 250ms ease;
+  transition: 500ms ease;
 }
 
 .menu:hover{
   background-color: #222831;
   box-shadow: 0 0 0 0 #eeeeee;
-  transform: scale(1);
-  animation: pulse 1.5s infinite;
+  font-size: 30px;
 }
 
 .btn {
@@ -82,15 +83,41 @@ a {
   float: right;
 }
 
-.img{
-  width: 24.7%;
-  height: auto;
-  border-radius: 10px;
+.frame {
+  width:800px;
+  height:450px;
+  overflow: hidden;
+}
+
+.slides {
+  animation: slide 73s ease infinite 0s;
+  width: 1200%;
+  display: flex;
+}
+
+.img {
+  width:800px;
+  height:450px;
+}
+
+@keyframes slide {
+  0%, 7.41%, 100% {transform: translate(0,0);}
+  8.15%, 15.56% {transform: translate(-8.33%,0);}
+  16.30%, 23.70% {transform: translate(-16.67%,0);}
+  24.44%, 31.85% {transform: translate(-25%,0);}
+  32.59%, 40% {transform: translate(-33.33%,0);}
+  40.74%, 48.15% {transform: translate(-41.67%,0);}
+  48.89%, 56.30% {transform: translate(-50%,0);}
+  57.04%, 64.44% {transform: translate(-58.33%,0);}
+  65.19%, 72.59% {transform: translate(-66.67%,0);}
+  73.33%, 80.74% {transform: translate(-75%,0);}
+  81.48%, 88.89% {transform: translate(-83.33%,0);}
+  89.63%, 97.04% {transform: translate(-91.67%,0);}
 }
 
 @keyframes chargement {
  0% {transform: translate(0px, -1000px);}
- 75% {transform: translate(0px, 25px);}
+ 80% {transform: translate(0px, 10px);}
  100% {}
 }
 
